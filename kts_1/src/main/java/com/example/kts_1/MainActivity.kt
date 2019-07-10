@@ -13,14 +13,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         button.isEnabled = false
 
-        var passEnter = false
-        var emailEnter = false
-
         editPass.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                passEnter = true
 
-                if (emailEnter) {
+                if ((editEmail.getText().isNotEmpty()) && (editPass.getText().isNotEmpty())){
                     button.isEnabled = true
                 }
             }
@@ -42,9 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         editPass.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                emailEnter = true
-
-                if (passEnter) {
+                if ((editEmail.getText().isNotEmpty()) && (editPass.getText().isNotEmpty())){
                     button.isEnabled = true
                 }
             }
