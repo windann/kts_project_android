@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:padding="40dp"
-              android:background="@color/colorAccent"
-              android:gravity="center"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+
 
 >
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/bg_blur"
+               android:scaleType="centerCrop"/>
+
     <ScrollView android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -14,6 +18,7 @@
                       android:layout_height="wrap_content"
                       android:orientation="vertical"
                       android:padding="40dp"
+                      android:layout_margin="40dp"
                       android:layout_gravity="center"
                       android:background="@color/colorWhite">
 
@@ -21,20 +26,20 @@
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="EMAIL"
-                      android:textColor="@color/colorPrimary"
-                      android:layout_marginTop="40dp"
+                      android:textColor="@color/colorPrimaryDark"
+
             />
 
             <EditText android:id="@+id/editEmail"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:hint="Enter email"
-                      android:textColorHint="@color/colorPrimaryDark"/>
+                      android:textColorHint="@color/colorPrimary"/>
 
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="PASSWORD"
-                      android:textColor="@color/colorPrimary"
+                      android:textColor="@color/colorPrimaryDark"
                       android:layout_marginTop="40dp"
             />
 
@@ -43,15 +48,15 @@
                       android:layout_height="wrap_content"
                       android:inputType="textPassword"
                       android:hint="Enter password"
-                      android:textColorHint="@color/colorPrimaryDark"/>
+                      android:textColorHint="@color/colorPrimary"/>
 
             <Button android:id="@+id/button"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="40dp"
                     android:text="LOGIN"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/colorPrimaryDark"
             />
         </LinearLayout>
 
