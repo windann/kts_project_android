@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="email">Почта</string>
+    <string name="pass">Пароль</string>
+    <string name="ent_email">Введите почту</string>
+    <string name="ent_pass">Введите пароль</string>
+</resources>
